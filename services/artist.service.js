@@ -7,7 +7,7 @@ const createArtist = async(artistData) => {
 };
 
 const getArtist = async () => {
-    return await Artist.find({}, 'name birthplace gender');
+    return await Artist.find({},'name birthplace gender');
 };
 
 module.exports = {

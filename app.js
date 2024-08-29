@@ -10,7 +10,9 @@ app.use(cors());
 app.use(express.json());
 //Rutas
 
-app.use('/api/artist', require('./routes/artist.routes'))
+app.use('/api/artist', require('./routes/artist.routes'));
+app.use('/api/album', require('./routes/album.routes'));
+
 
 app.get('/', (req, res) => {
     res.json({
