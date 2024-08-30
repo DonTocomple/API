@@ -3,7 +3,8 @@ const { Schema, model } = require('mongoose');
 const AlbumSchema = Schema({
     title: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     duration: {
         type: String,
