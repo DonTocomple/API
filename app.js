@@ -12,6 +12,8 @@ app.use(express.json());
 
 app.use('/api/artist', require('./routes/artist.routes'));
 app.use('/api/album', require('./routes/album.routes'));
+app.use('/api/song', require('./routes/song.routes'));
+app.use('/api/genre', require('./routes/genre.routes'));
 
 
 app.get('/', (req, res) => {
